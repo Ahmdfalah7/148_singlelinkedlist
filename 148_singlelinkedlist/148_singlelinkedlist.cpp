@@ -88,7 +88,7 @@ bool listEmpty() {
 		return true;
 	else
 		return false;
-
+	
 }
 
 void traverse() {
@@ -101,8 +101,8 @@ void traverse() {
 	else {
 		Node* currentNode = START;
 		while (currentNode != NULL) {
-			cout << "NIM:" << currentNode->noMhs << ", Nama : " << currentNode->name << endl;
-			currentNode = currentNode->next;
+			cout << "NIM:"<< currentNode->noMhs << ", Nama : " << currentNode->name << endl;
+				currentNode = currentNode->next;
 		}
 	}
 }
@@ -148,10 +148,10 @@ int main() {
 			{
 			case 1:
 				addNode();
-				cout << "Data Berhasil Ditambahkan" << endl;
-				system("pause");
-				system("cls");
-				break;
+					cout << "Data Berhasil Ditambahkan" << endl;
+					system("pause");
+					system("cls");
+					break;
 			case 2:
 				if (listEmpty())
 				{
@@ -185,9 +185,10 @@ int main() {
 				break;
 			}
 		}
-		catch (exception e)
-		{
-			cout << "Terjadi kesalahan" << endl;
-		}
-	}
+			catch (exception e)
+			{
+				cout << "Terjadi kesalahan" << endl;
+			}
+
+		}while (pilihan != 5);
 }
